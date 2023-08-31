@@ -116,78 +116,9 @@
             <div class="w-full text-center justify-center flex h-44">
                 <p class="text-secondary font-bold text-3xl font-serif border-b-2 border-secondary h-10">Events</p>
             </div>
-            <div class="h-full w-full flex justify-center overflow-hidden space-x-16 flex-col md:flex-row ml-16">
-                <div id="slider" class=" h-4/5 w-1/2 md:w-4/5 rounded-2xl flex ease-in-out duration-200">
-                    <!-- The images will be added dynamically using JavaScript -->
-                </div>
-                <div class="flex md:flex  md:flex-col ">
-                    <div class="w-full h-full md:space-y-2 md\:items-center md\:content-center md\:justify-center md\:text-center md\:flex ">
-                        <div class="text-white ml-0 text-3xl md:text-8xl font-bold font-sans md:ml-0 ml-16">13 Events</div>
-                        <div class="text-white ml-0 text-4xl md:text-8xl font-bold font-sans mr-32 md:mr-0">75,000 PRIZE POOL</div>
-                            <div class="flex md:space-x-10 md:space-y-3 md:flex-row flex-col">
-                                <div class="md:space-y-3 md:mt-3 w-full ml-20 md:ml-0 ">
-                                    <div class="text-secondary text-lg md:text-3xl font-bold font-sans">OCTOBER 6,7,8</div>
-                                    <div class="text-secondary text-lg md:text-2xl font-bold font-sans">REGISTER <span class="text-white">NOW</span></div>
-                                </div>
-                                <div class="ml-24 md:ml-0 mt-2 md:mt-0 text-white md:text-2xl font-bold font-sans bg-secondary rounded-2xl md:w-36 md:h-12 h-8 w-20 p-2 text-center justify-center flex content-center items-center hover:bg-secondary_light"><a href="https://forms.gle/DcU6C6JLj9yJW5pa9">Register</div>
-                            </div>
-                        <div class="text-white text-sm md:text-2xl font-bold font-sans md:mt-3">Register before October 1 </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         
-        <script>
-            const slider = document.getElementById('slider');
-            const images = [
-                'main page.png',
-                'mp page.png',
-                'vissionpage.png',
-                'xtra page.png',
-                'INSTRUCTIONS.png',
-                'Hackathon.png',
-                'hins.png',
-                'typing.png',
-                'debugging.png',
-                'errins.png',
-                'coding.png',
-                'cdins.png',
-                'pp.png',
-                'ppins.png',
-                'ppins.png',
-                'rivalry.png',
-                'rins.png',
-                'surge.png',
-                'surgeins.png',
-                'surgeins.png',
-                'quiz.png',
-                'qins.png',
-                'ph.png',
-                'phins.png',
-                'th.png',
-                'thins.png',
-                'hacking.png',
-                'hins.png',
-                'wd.png',
-                'wdins.png',
-                'sudoku.png',
-                'sdins.png',
-            ];
-            let currentIndex = 0;
         
-            function startAutoSlide() {
-                setInterval(() => {
-                    updateSlider();
-                    currentIndex = (currentIndex + 1) % images.length;
-                }, 5000); // Switch image every 5 seconds
-                updateSlider(); // Display the first image immediately
-            }
-            function updateSlider() {
-                const imageSrc = images[currentIndex];
-                slider.innerHTML = `<img src="${imageSrc}"  alt="Image ${currentIndex + 1}">`;
-            }
-            // Start the auto slide
-            startAutoSlide();
-        </script>
     </body>
 </html>
